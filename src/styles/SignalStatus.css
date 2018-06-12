@@ -1,0 +1,10 @@
+.signal-status {
+    text-align: left;
+    width: 10%;
+}
+
+.status-bar {
+    background-color: #34352D;
+    display: inline-block;
+    padding-top: 3px;
+}

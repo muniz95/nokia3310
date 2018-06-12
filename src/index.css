@@ -1,0 +1,8 @@
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif;
+  background-color: #B9C38E;
+  color: #34352D;
+}
