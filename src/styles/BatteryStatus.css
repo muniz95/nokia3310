@@ -1,6 +1,7 @@
 .battery-status {
     text-align: right;
     width: 10%;
+    padding: 5px;
 }
 
 .status-bar {

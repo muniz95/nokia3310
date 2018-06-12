@@ -64,7 +64,7 @@ class Home extends React.Component<IProps, IState> {
     public render() {
         const label = this.state.menus[this.state.position];
         return (
-            <div style={{height: '100%'}}>
+            <div className="page-container">
                 <TopBar />
                 <Hammer onTap={this.handleTap}
                         onSwipeLeft={this.swipeLeft}

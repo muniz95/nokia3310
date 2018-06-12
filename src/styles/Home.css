@@ -4,3 +4,10 @@
     justify-content: center;
     align-items: center;
 }
+
+.page-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
