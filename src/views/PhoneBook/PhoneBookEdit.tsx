@@ -1,14 +1,14 @@
 import * as React from "react";
-import '../styles/Home.css';
+import '../../styles/Home.css';
 
-class CallRegister extends React.Component {
+class PhoneBookEdit extends React.Component {
     public render() {
         return (
             <div className="home">
-                Call Register View
+                PhoneBookEdit View
             </div>
         )
     }
 }
 
-export default CallRegister;
+export default PhoneBookEdit;

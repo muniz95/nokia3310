@@ -1,6 +1,5 @@
 import * as React from "react";
 import Hammer from 'react-hammerjs';
-import TopBar from "../components/TopBar";
 import '../styles/Home.css';
 
 interface IProps {
@@ -53,27 +52,24 @@ class Home extends React.Component<IProps, IState> {
     
     public swipeLeft() {
         const { position } = this.state;
-        this.setState({position: position === 0 ? 12 : position - 1})
+        this.setState({position: position === 12 ? 0 : position + 1})
     }
     
     public swipeRight() {
         const { position } = this.state;
-        this.setState({position: position === 12 ? 0 : position + 1})
+        this.setState({position: position === 0 ? 12 : position - 1})
     }
 
     public render() {
         const label = this.state.menus[this.state.position];
         return (
-            <div className="page-container">
-                <TopBar />
-                <Hammer onTap={this.handleTap}
-                        onSwipeLeft={this.swipeLeft}
-                        onSwipeRight={this.swipeRight}>
-                    <div className="home">
-                        {label.title}
-                    </div>
-                </Hammer>
-            </div>
+            <Hammer onTap={this.handleTap}
+                    onSwipeLeft={this.swipeLeft}
+                    onSwipeRight={this.swipeRight}>
+                <div className="home">
+                    {label.title}
+                </div>
+            </Hammer>
         )
     }
 }

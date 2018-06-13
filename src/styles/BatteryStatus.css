@@ -6,7 +6,7 @@
 
 .status-bar {
     background-color: #34352D;
+    /* color: #B9C38E; */
     display: inline-block;
-    padding-top: 3px;
     margin: 1px;
 }
