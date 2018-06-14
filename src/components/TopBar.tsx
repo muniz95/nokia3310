@@ -1,5 +1,5 @@
 import * as React from 'react';
-import '../styles/TopBar.css';
+import '../styles/TopBar.scss';
 
 interface IState {
     date: Date;

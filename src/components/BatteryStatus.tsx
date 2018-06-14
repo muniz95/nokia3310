@@ -1,5 +1,5 @@
 import * as React from 'react';
-import '../styles/BatteryStatus.css';
+import '../styles/BatteryStatus.scss';
 
 class BatteryStatus extends React.Component {
     public render() {

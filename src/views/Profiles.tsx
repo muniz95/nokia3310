@@ -1,5 +1,5 @@
 import * as React from "react";
-import '../styles/Home.css';
+import '../styles/Home.scss';
 
 class Profiles extends React.Component {
     public render() {

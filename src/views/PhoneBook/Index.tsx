@@ -1,6 +1,6 @@
 import * as React from "react";
 import Hammer from "react-hammerjs";
-import '../../styles/Home.css';
+import '../../styles/Home.scss';
 
 interface IProps {
     history: {

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import "../styles/SignalStatus.css";
+import "../styles/SignalStatus.scss";
 
 class SignalStatus extends React.Component {
     /**

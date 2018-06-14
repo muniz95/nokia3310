@@ -1,5 +1,5 @@
 import * as React from "react";
-import '../styles/Home.css';
+import '../styles/Home.scss';
 
 class Settings extends React.Component {
     public render() {
