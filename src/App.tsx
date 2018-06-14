@@ -2,6 +2,7 @@ import * as React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import BatteryStatus from './components/BatteryStatus';
+import Modal from './components/Modal';
 import SignalStatus from './components/SignalStatus';
 import TopBar from './components/TopBar';
 import Calculator from './views/Calculator';
@@ -13,6 +14,7 @@ import Games from './views/Games';
 import Home from './views/Home';
 import Messages from './views/Messages';
 import PhoneBook from './views/PhoneBook/Index';
+import PhoneBookAddName from './views/PhoneBook/PhoneBookAddName';
 import PhoneBookSearch from './views/PhoneBook/PhoneBookSearch';
 import Profiles from './views/Profiles';
 import Reminders from './views/Reminders';
@@ -31,6 +33,7 @@ class App extends React.Component {
               <TopBar />
               <Switch>
                 <Route exact={true} path='/' component={Home} />
+                <Route path="/phonebook/addname" component={PhoneBookAddName} />
                 <Route path="/phonebook/search" component={PhoneBookSearch} />
                 <Route path="/phonebook" component={PhoneBook} />
                 <Route path="/messages" component={Messages} />
@@ -49,6 +52,7 @@ class App extends React.Component {
             </div>
           </div>
           <BatteryStatus />
+          <Modal />
         </div>
       </Router>
     );

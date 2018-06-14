@@ -48,13 +48,13 @@ class PhoneBook extends React.Component<IProps, IState> {
     }
 
     public swipeLeft() {
-        const { position } = this.state;
-        this.setState({ position: position === 12 ? 0 : position + 1 })
+        const { position, menus } = this.state;
+        this.setState({ position: position === menus.length-1 ? 0 : position + 1 })
     }
 
     public swipeRight() {
-        const { position } = this.state;
-        this.setState({ position: position === 0 ? 12 : position - 1 })
+        const { position, menus } = this.state;
+        this.setState({ position: position === 0 ? menus.length-1 : position - 1 })
     }
 
     public render() {

@@ -4,9 +4,17 @@ import '../../styles/Home.css';
 class PhoneBookAddName extends React.Component {
     public render() {
         return (
-            <div className="home">
-                PhoneBookAddName View
+          <div className="home">
+            <div>
+              <input type="text" name="name" id="name"/>
             </div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+            <div>
+              <button>Save</button>
+            </div>
+          </div>
         )
     }
 }
