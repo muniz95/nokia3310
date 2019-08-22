@@ -11,9 +11,6 @@ class TopBar extends React.Component<{}, IState> {
     constructor(props: {}) {
         super(props);
         this.state = { date: new Date() };
-    }
-
-    public componentDidMount() {
         this.timerID = setInterval(
             () => this.tick(),
             1000
