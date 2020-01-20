@@ -1,3 +1,5 @@
+[![Run on Repl.it](https://repl.it/badge/github/muniz95/nokia3310)](https://repl.it/github/muniz95/nokia3310)
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
