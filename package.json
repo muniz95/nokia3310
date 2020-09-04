@@ -93,7 +93,7 @@
     "deploy": "surge ./build -d https://nokia3310.surge.sh"
   },
   "devDependencies": {
-    "node-sass": "^4.9.0",
+    "node-sass": "^4.13.1",
     "surge": "^0.20.1"
   },
   "eslintConfig": {
