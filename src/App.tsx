@@ -1,5 +1,5 @@
-import * as React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 import BatteryStatus from './components/BatteryStatus';
 import Modal from './components/Modal';
@@ -22,41 +22,36 @@ import Settings from './views/Settings';
 import SimServices from './views/SimServices';
 import Tones from './views/Tones';
 
-class App extends React.Component {
-  public render() {
-    return (
-      <Router>
-        <div className="App">
-          <SignalStatus />
-          <div className="container">
-            <div className="page-container">
-              <TopBar />
-              <Switch>
-                <Route exact={true} path='/' component={Home} />
-                <Route path="/phonebook/addname" component={PhoneBookAddName} />
-                <Route path="/phonebook/search" component={PhoneBookSearch} />
-                <Route path="/phonebook" component={PhoneBook} />
-                <Route path="/messages" component={Messages} />
-                <Route path="/chat" component={Chat} />
-                <Route path="/callregister" component={CallRegister} />
-                <Route path="/tones" component={Tones} />
-                <Route path="/settings" component={Settings} />
-                <Route path="/calldivert" component={CallDivert} />
-                <Route path="/games" component={Games} />
-                <Route path="/calculator" component={Calculator} />
-                <Route path="/reminders" component={Reminders} />
-                <Route path="/clock" component={Clock} />
-                <Route path="/profiles" component={Profiles} />
-                <Route path="/simservices" component={SimServices} />
-              </Switch>
-            </div>
-          </div>
-          <BatteryStatus />
-          <Modal />
+const App = () => 
+  <BrowserRouter>
+    <div className="App">
+      <SignalStatus />
+      <div className="container">
+        <div className="page-container">
+          <TopBar />
+          <Switch>
+            <Route exact={true} path='/' component={Home} />
+            <Route path="/phonebook/addname" component={PhoneBookAddName} />
+            <Route path="/phonebook/search" component={PhoneBookSearch} />
+            <Route path="/phonebook" component={PhoneBook} />
+            <Route path="/messages" component={Messages} />
+            <Route path="/chat" component={Chat} />
+            <Route path="/callregister" component={CallRegister} />
+            <Route path="/tones" component={Tones} />
+            <Route path="/settings" component={Settings} />
+            <Route path="/calldivert" component={CallDivert} />
+            <Route path="/games" component={Games} />
+            <Route path="/calculator" component={Calculator} />
+            <Route path="/reminders" component={Reminders} />
+            <Route path="/clock" component={Clock} />
+            <Route path="/profiles" component={Profiles} />
+            <Route path="/simservices" component={SimServices} />
+          </Switch>
         </div>
-      </Router>
-    );
-  }
-}
+      </div>
+      <BatteryStatus />
+      <Modal />
+    </div>
+  </BrowserRouter>;
 
 export default App;
