@@ -15,9 +15,9 @@
     "react-hammerjs": "^1.0.1",
     "react-redux": "^7.2.2",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^4.0.1",
+    "react-scripts": "^5.0.1",
     "redux": "^4.0.5",
-    "sass-loader": "^8.0.2",
+    "sass-loader": "^13.2.0",
     "typescript": "^4.1.3"
   },
   "scripts": {
